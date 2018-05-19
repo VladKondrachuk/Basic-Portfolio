@@ -48,6 +48,7 @@ html, body {
     text-align: center;
     width:205px;
     height: 65px;
+    font-size: 20px;
   }
 
 .btn-group {
@@ -127,12 +128,14 @@ p {
 
 footer {
     background-color: #666666;
-    height:50px;
+    height:60px;
     width:100%;
-    margin-top:-px;
     border-top:solid 5px;
     border-color: #4aaaa5;
     position: fixed;
+    left:0;
+    bottom: 0;
+    overflow: auto;
 }
 
 footer #Copydiv{
