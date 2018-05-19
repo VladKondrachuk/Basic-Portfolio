@@ -12,39 +12,28 @@
 
 <body>
         <container class="container">
-    <nav>
-        
-            
-                <ul class="main_menu">
-                    <h1 id="name">Vlad Kondrachuk</h1>
-                        <ul id="menu_links">
-                            <div class="btn-group">
-                                    <li><a class="btn round" href="index.html">About</a></li>
+                <div class="backgroundbanner">
+                        <ul class="main_menu">
+                            <div class="logo"><h1 id="name">Vlad Kondrachuk</h1></div>
+                                
+                                <li><a class="btn round" href="index.html">About</a></li>
                                 <li><a class="btn round" href="portfolio.html">Portfolio</a></li>
-                                <li><a class="btn round" href="contact.html">Contact</a></li>
-                            </div>
-                    </ul>
-                </ul>
-            
-    </nav>
+                                <li><a class="btn round" href="contact.html">Contact</a></li>   
+                        </ul>
+                    </div>
 
 <article>
     <div id="ArticleHeader">
-        <h2 id="AboutMe">Contact</h2>
+        <h2 id="AboutMe">Contacts</h2>
     </div>
-    <img src="assets\images\ProfilePic.jpg" alt="VladKPic" title="ProfilePic" height="200" width="170" style="float:left; margin-right: 20px; margin-bottom:6px;"/>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet est commodo, efficitur arcu non, 
-             blandit arcu. Etiam ac fringilla dolor. Sed vestibulum sodales massa, in mollis ex molestie in. Orci 
-             varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam laoreet ullamcorper
-             congue. Integer lacinia ipsum nec vestibulum ultrices. Duis maximus ligula vel iaculis hendrerit. 
-             Pellentesque vel nunc velit. Vivamus cursus enim risus, ac faucibus tellus facilisis et. Vestibulum 
-             imperdiet, lacus non pretium pharetra, neque mi bibendum ex, at hendrerit quam purus quis odio. 
-             Sed et tortor sit amet leo cursus finibus. Vivamus gravida elit sapien, et pellentesque tellus 
-             condimentum eget. Duis tristique metus rhoncus mi rutrum, ac condimentum mi aliquet. Nunc sed 
-             suscipit arcu. Fusce vel ex malesuada, eleifend erat luctus, consequat nisi. Sed pellentesque vitae
-             dui non sagittis.
+    
+    <form class ="form1" action="process.php" method="POST">
+            <span class="label">Name:</span> <input type="text" name="username" placeholder="Please enter your full name"/> <br /><br />
+            <span class="label">Email:</span> <input type="text" name="email" placeholder="Please enter your email"/> <br /><br />
+            <span class="label"> Message:</span> <input class ="message" type="text" name="message" placeholder="Please enter your message" /> <br /><br />
+            <input class ="submit" type="submit" value="Submit" name="submit" />
+    </form>
 
-            </p>
 </article>
 
 </container>
