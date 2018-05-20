@@ -1,14 +1,14 @@
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#dddddd;
+    background-image: url(../images/concrete-texture.png);
 }
 
 .container {
     height: fit-content;
-
 }
 
+/* -------------------------------Header-------------------------------- */
 .backgroundbanner {
     background-color: #ffffff;
     padding:30px;
@@ -35,13 +35,12 @@ html, body {
     margin:-15px 0 0 0;
   }
 
-  
   .logo {
     color:white;
     background-color: #4aaaa5;
     position: absolute;
     float:left;
-    margin:-30px 0px 0px -80px;
+    margin:-30px 0px 0px -65px;
     padding:25px 15px 15px 15px;
     font-size: 10px;
     font-weight: bold;
@@ -51,63 +50,48 @@ html, body {
     font-size: 20px;
   }
 
-.btn-group {
-    margin:0 0 300px 800px;
-    padding-top:30px;
-}
+  #name{
+margin-top: 15px;
+
+  }
 
 #AboutMe{
     color:#4aaaa5;
     font-family:'Georgia', Times, 'Times New Roman', serif;
 }
 
-.label {
-    color:#cccccc;
 
-}
 
 #ArticleHeader {
     border-bottom:solid;
     border-color: #cccccc;
     margin-bottom:10px;
-}
-.message{
-    height:250px;
-    width:960px;
-    text-align: start;
-
+    font-weight: bold;
+    font-size:20px;
 }
 
-.imagerow1{
-    width:600px;
-    padding-bottom:50px;
-}
-.submit{
-    height:50px;
-    background-color: #4aaaa5;
-    width:100px;
-}
-message{
-    height:500px;
-    background-color: #4aaaa5;
-    width:500px;
-}
+/* -------------------------------Contact Form-------------------------------- */
 
 .form1 {
     margin: 50px auto;
 }
 
-message{
-
-    height: 200px;
+.message{
+    height:250px;
+    width:960px;
+    text-align: start;
 }
+
 input{
     display:block;
     width:100%;
-    
 }
 
+.label {
+    color:#aca5a5;
+}
 
+/* -------------------------------Main Content-------------------------------- */
 article {
     background-color: #ffffff;
     margin: 15px auto;
@@ -116,8 +100,6 @@ article {
     height:650px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     overflow:auto;
-    border:solid 5px;
-    border-color: #cccccc;
 }
 
 p {
@@ -126,6 +108,8 @@ p {
     line-height: 25px;
 }
 
+
+/* -------------------------------Footer-------------------------------- */
 footer {
     background-color: #666666;
     height:60px;
@@ -143,9 +127,30 @@ footer #Copydiv{
     width:300px;
     padding:20px 0px 0px 0px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 8px;
+    font-size:12px;
+	font-weight:bold;
     color: #cccccc;
     position: fixed;
+}
+
+/* -------------------------------Buttons-------------------------------- */
+.btn-group {
+    margin:0 0 300px 800px;
+    padding-top:30px;
+}
+
+.submit{
+    text-decoration:none;
+    background-color: #4aaaa5;
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	padding:0 15px;
+	line-height:32px;
+    height: auto;
+    width:100px;
+    text-align:center;
+    border-radius: 5px;
 }
 
 .btn{
@@ -204,6 +209,96 @@ footer #Copydiv{
     transform: rotate(180deg);
   }
 
+/* -------------------------------Images-------------------------------- */
+
+ .heroimage1{
+    background-image: url(../images/TechImage1.jpg);
+/* Set a specific height */
+    height:200px;
+    width:250px;
+
+/* Position and center the image to scale nicely on all screens */
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heroimage2{
+    background-image: url(../images/TechImage2.jpg);
+/* Set a specific height */
+    height:200px;
+    width:250px;
+
+/* Position and center the image to scale nicely on all screens */
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heroimage3{
+    background-image: url(../images/TechImage3.jpg);
+/* Set a specific height */
+    height:200px;
+    width:250px;
+
+/* Position and center the image to scale nicely on all screens */
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heroimage4{
+    background-image: url(../images/TechImage4.jpg);
+/* Set a specific height */
+    height:200px;
+    width:250px;
+
+/* Position and center the image to scale nicely on all screens */
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heroimage5{
+    background-image: url(../images/TechImage5.jpg);
+/* Set a specific height */
+    height:200px;
+    width:250px;
+
+/* Position and center the image to scale nicely on all screens */
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.herotext {
+    text-align: center;
+    position: absolute;
+    padding-top: 18px;
+    top: 80%;
+    left:50%;
+    width: 100%;
+    height: 35px;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #4aaaa5;
+}
  
 
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 1px;
+  }
   
+  /* Clear floats after image containers */
+  imagerow1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
